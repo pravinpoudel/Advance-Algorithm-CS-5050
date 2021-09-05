@@ -1,37 +1,20 @@
 "use strict";
 
-var player = null;
-var t0 = performance.now(); // check if this move is winner of looser
+var t0 = performance.now();
 
-var checkWin = function checkWin(n) {
-  var move = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-  player = move % 2 == 0 ? "human" : "computer";
-
+var winner = function winner(n) {
   if (n == 0) {
-    console.log("its a win by a ".concat(player, " in ").concat(move, "th move"));
     return true;
-  } else {
-    move++;
-
-    if (n == 1 || n == 2) {
-      return checkWin(n - 1, move);
-    }
-
-    if (n % 3 == 0) {
-      return checkWin(n - 2, move);
-    }
-
-    if (n % 3 == 2) {
-      return checkWin(n - 1, move);
-    }
-
-    if (n % 3 == 1) {
-      return checkWin(n - 2, move);
-    }
   }
+
+  if (n == 1) {
+    return false;
+  }
+
+  return !(winner(n - 1) && winner(n - 2));
 };
 
-checkWin(6, 0);
+winner(30);
 var t1 = performance.now();
-console.log("execution time is" + (t2 - t1));
+console.log("time is " + (t1 - t0) + " ms");
 //# sourceMappingURL=Nims.dev.js.map
