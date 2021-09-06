@@ -1,0 +1,23 @@
+{
+  "name": "advance-algorithm",
+  "version": "1.0.0",
+  "description": "Assignment 1 Package",
+  "main": "Nims.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Nims.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pravinpoudel/Advance-Algorithm-CS-5050.git"
+  },
+  "author": "Pravin Poudel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pravinpoudel/Advance-Algorithm-CS-5050/issues"
+  },
+  "homepage": "https://github.com/pravinpoudel/Advance-Algorithm-CS-5050#readme",
+  "dependencies": {
+    "csv-writer": "^1.6.0"
+  }
+}
