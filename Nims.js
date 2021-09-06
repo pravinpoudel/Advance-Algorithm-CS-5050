@@ -5,7 +5,7 @@ const createCsvWriter = require("csv-writer").createObjectCsvWriter;
 try {
   (async () => {
     const csvWriter = createCsvWriter({
-      path: "files/timeRecord2.csv",
+      path: "files/timeRecord.csv",
       header: [
         { id: "number", title: "Number of items" },
         {

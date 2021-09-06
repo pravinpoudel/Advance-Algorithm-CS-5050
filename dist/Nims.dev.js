@@ -13,7 +13,7 @@ try {
         switch (_context.prev = _context.next) {
           case 0:
             csvWriter = createCsvWriter({
-              path: "files/timeRecord2.csv",
+              path: "files/timeRecord.csv",
               header: [{
                 id: "number",
                 title: "Number of items"

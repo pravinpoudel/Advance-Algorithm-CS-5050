@@ -28,7 +28,7 @@ var svg = d3.select("body").append("svg").attr("width", 600).attr("height", 400)
 
 svg.append("text").attr("class", "xaxis-label").attr("transform", "translate(" + 0.4 * width + "," + (height + margin.top + 10) + ")").text("number of items in the heap");
 svg.append("text").attr("class", "yaxis-label").attr("transform", "rotate(-90)").attr("x", 0 - 0.5 * height).attr("y", 0 - margin.left - 5).attr("dy", "14px").text("execution time (sec)");
-d3.csv("files/timeRecord2.csv", function (err, value) {
+d3.csv("files/timeRecord.csv", function (err, value) {
   if (err) {
     console.error(err);
     throw err;

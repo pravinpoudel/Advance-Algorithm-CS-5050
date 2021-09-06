@@ -52,7 +52,7 @@ svg
   .attr("dy", "14px")
   .text("execution time (sec)");
 
-d3.csv("files/timeRecord2.csv", (err, value) => {
+d3.csv("files/timeRecord.csv", (err, value) => {
   if (err) {
     console.error(err);
     throw err;
